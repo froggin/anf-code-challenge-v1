@@ -1,0 +1,19 @@
+{
+  "name": "anf-code-challenge-v1",
+  "version": "1.0.0",
+  "description": "Code test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/froggin/anf-code-challenge-v1.git"
+  },
+  "author": "Nicholaus Chipping",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/froggin/anf-code-challenge-v1/issues"
+  },
+  "homepage": "https://github.com/froggin/anf-code-challenge-v1#readme"
+}

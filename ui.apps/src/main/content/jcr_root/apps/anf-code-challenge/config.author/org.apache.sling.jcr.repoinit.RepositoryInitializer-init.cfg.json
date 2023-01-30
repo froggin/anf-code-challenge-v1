@@ -1,0 +1,9 @@
+{
+    "scripts": [
+        "create path /var/anf-code-challenge(sling:OrderedFolder)",
+        "create service user anf-page-service",
+        "set ACL for anf-page-service\n\tallow jcr:read on /etc/age\nend",
+        "set ACL for anf-page-service\n\tallow jcr:read,rep:write,jcr:readAccessControl,jcr:modifyAccessControl on /content/anf-code-challenge/us/en\nend",
+        "set ACL for anf-page-service\n\tallow jcr:read,rep:write,jcr:readAccessControl,jcr:modifyAccessControl on /var/anf-code-challenge\nend"
+    ]
+}

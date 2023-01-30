@@ -1,0 +1,21 @@
+<!--  ***Begin Code - Nicholaus Chipping***  -->
+<div data-sly-use.feed="com.anf.core.models.NewsFeedModel"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     class="cmp-feed">
+    <div class="cmp-feed__items" data-sly-list.child="${feed.items}">
+        <div class="cmp-feed__items-item">
+            <a class="cmp-feed__item-link" href="${child.url}">
+                <img data-sly-test.imageSrc="${child.urlImage}"
+                    src="${imageSrc}"
+                    alt="${child.title}"
+                    class="cmp-feed__image"/>
+                <h2 class="cmp-feed__title">${child.title}</h2>
+                <h3 class="cmp-feed__author">by ${child.author}</h3>
+                <!-- not using child.content, although it is available from the model -->
+                <p class="cmp-feed__description">${child.description}</p>
+            </a>
+        </div>
+    </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !feed.items, classAppend = 'cmp-feed empty'}"></sly>
+<!-- ***END Code***** -->

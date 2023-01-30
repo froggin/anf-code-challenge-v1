@@ -1,0 +1,19 @@
+.cmp-feed {
+    max-width: 1000px;
+}
+
+.cmp-feed .cmp-feed__items-item {
+    margin: 10px;
+    border: solid 1px white;
+    min-width: 30%;
+    max-width: 80%;
+    padding: 15px;
+    display: inline-block;
+}
+.cmp-feed .cmp-feed__item-link {
+    text-decoration: none;
+    color: #2020c0;
+}
+.cmp-feed .cmp-feed__items-item .cmp-feed__image {
+    width:100%;
+}

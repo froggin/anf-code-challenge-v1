@@ -1,4 +1,10 @@
 
 <div class="country__cmp">
 	Country:
+	<sly data-sly-test.country="${properties.country}">
+		${country}
+	</sly>
+	<sly data-sly-test="${!country}">
+		not configured
+	</sly>
 </div>
